@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <script>
+      // let firstNum = document.getElementById("first").value;
+      // let secondNum = document.getElementById("second").value;
+
+      // function add() {
+      //   let result = parseInt(firstNum) + parseInt(secondNum);
+      //   document.getElementById("demo").innerHTML = result;
+      // }
+      let firstNum = document.getElementById("first").value;
+      let secondNum = document.getElementById("second").value;
+
+      function add() {
+        let result = parseInt(firstNum) + parseInt(secondNum);
+        document.getElementById("demo").innerHTML = result;
+      }
+    </script>
+  </head>
+  <body>
+    <input type="number" id="first" />
+    <input type="number" id="second" />
+    <button onclick="add()">Sum</button>
+    <p id="demo"></p>
+  </body>
+</html>
