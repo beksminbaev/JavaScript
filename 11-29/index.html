@@ -5,27 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript</title>
-    <script>
-      // let firstNum = document.getElementById("first").value;
-      // let secondNum = document.getElementById("second").value;
-
-      // function add() {
-      //   let result = parseInt(firstNum) + parseInt(secondNum);
-      //   document.getElementById("demo").innerHTML = result;
-      // }
-      let firstNum = document.getElementById("first").value;
-      let secondNum = document.getElementById("second").value;
-
-      function add() {
-        let result = parseInt(firstNum) + parseInt(secondNum);
-        document.getElementById("demo").innerHTML = result;
-      }
-    </script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <input type="number" id="first" />
-    <input type="number" id="second" />
-    <button onclick="add()">Sum</button>
-    <p id="demo"></p>
+    <div>Random Number: <span id="randomNum"></span></div>
+    <div class="container">
+      <label for="lowLimit">Lower Limit</label>
+      <input type="number" id="lowLimit" />
+      <label for="upLimit">Upper Limit</label>
+      <input type="number" id="upLimit" />
+      <div>
+        <button id="generateBtn">Generate</button>
+        <button id="clearBtn">Clear</button>
+      </div>
+    </div>
+    <script src="mycode.js"></script>
   </body>
 </html>

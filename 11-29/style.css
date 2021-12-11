@@ -1,0 +1,32 @@
+.container {
+  width: 300px;
+  background-color: #eeeeee;
+  text-align: center;
+  padding: 30px 0;
+  border: 1px solid gray;
+}
+input,
+label {
+  display: inline-block;
+  width: 45%;
+  margin-top: 2px;
+}
+label {
+  text-align: right;
+}
+button {
+  margin-top: 20px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  background-color: #999999;
+  padding: 8px 10px;
+}
+#generateBtn {
+  background-color: #417116;
+}
+#result {
+  font-size: 20px;
+  margin-left: 25px;
+  font-weight: bold;
+}
