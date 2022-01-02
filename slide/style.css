@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: azure;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.slider-container {
+  border: 5px solid skyblue;
+  width: 80vw;
+  margin: 0 auto;
+  height: 40vh;
+  max-width: 80rem;
+  position: relative;
+  border-radius: 5px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.slide-img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(195, 214, 221);
+  color: white;
+  display: grid;
+  place-items: center;
+  transition: all 0.25s ease-in-out;
+  text-align: center;
+}
+
+.slide h1 {
+  font-size: 5rem;
+}
+
+.slide :nth-child(1) h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.person-img {
+  border-radius: 50%;
+  margin: 0 auto;
+  width: 6rem;
+  height: 6rem;
+  margin-bottom: 1rem;
+}
+.slide:nth-child(3) {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://source.unsplash.com/random/800x400") center/cover no-repeat;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+button:hover {
+  color: darkblue;
+}
+.prevBtn,
+.nextBtn {
+  background-color: transparent;
+  border-color: transparent;
+  font-size: 1.75rem;
+  cursor: pointer;
+  margin: 0 0.25rem;
+  text-transform: capitalize;
+  color: grey;
+  transition: all 0.3 ease-in;
+}
